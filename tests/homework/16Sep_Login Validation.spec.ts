@@ -2,7 +2,6 @@ import { test, expect} from '@playwright/test';
 
 test("Verfiy URL", async({ page})=>{
 
-
     await page.goto("https://app.thetestingacademy.com/playwright/multiple_element_filter/");
     let inputBox = page.locator("//input[@id='email']");
     await inputBox.fill("dummy@dummy.com");
