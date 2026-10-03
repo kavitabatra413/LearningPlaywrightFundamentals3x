@@ -16,7 +16,7 @@ test("Orange HRM", async ({ page }) => {
    await page.getByPlaceholder("Password").fill("admin123");
    await page.getByRole('button', { name: "Login" }).click();
 
-   await page.locator("//a[contains(@href,'viewPimModule')]").click();
+   await page.locator("//a[contains(@href,'viewPimModule')]").click();//href="/web/index.php/pim/viewPimModule">
    await page.getByRole('button', { name: 'Add' }).click();
    await page.getByPlaceholder("First Name").fill("kavita");
    await page.getByPlaceholder("Middle Name").fill("mid");
@@ -33,3 +33,7 @@ test("Orange HRM", async ({ page }) => {
 
    await page.pause();
 });
+
+/*
+pim is left side menu item
+*/

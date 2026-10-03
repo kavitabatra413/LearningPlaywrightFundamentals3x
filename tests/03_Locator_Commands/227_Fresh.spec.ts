@@ -30,7 +30,12 @@ test('tc#1 - Verify that the vwo page is laoded', async({page})=>{
     // data-gtm-form-interact-field-id="0"
     // >
 
-    let userNameField = page.locator("#login-username");//id locator
+    /*#id → CSS ID selector
+    page.locator("#login-username");          // ID
+    page.locator('[name="username"]');        // name attribute
+    page.locator('input[name="username"]');   // tag + attribute
+*/
+    let userNameField = page.locator("#login-username");//id locatorS
     let passwordField = page.locator("#login-password");//id locator
     let loginButton = page.locator("#js-login-btn"); //id locator
     
@@ -43,8 +48,6 @@ test('tc#1 - Verify that the vwo page is laoded', async({page})=>{
     await expect(error_message).toContainText("Your email, password, IP address or location did not match");
 
     await page.pause();
-
-
 
 });
 

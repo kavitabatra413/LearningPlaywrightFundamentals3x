@@ -14,7 +14,6 @@ test('Verify the TestCase', async ({ page }) => {
       console.log(`Row ${i + 1}:`, rowsData);
 
    }
-
    await page.pause();
 });
 
@@ -27,4 +26,10 @@ rowsData	Array of strings containing the text of those cells
 Row 1: [ 'UAE', 'Dubai', '829m', '2010', '1', '\n' ]
 Row 2: [ 'Saudi Arabia', 'Mecca', '601m', '2012', '2', '\n' ]
 Row 3: [ 'Taiwan', 'Taipei', '509m', '2004', '3', '\n' ]
+*/
+
+/*
+Simple / static table
+The rows and data are already present in the HTML and generally don't change based on user actions.
+Simple <table>, <tr>, <td> structure
 */

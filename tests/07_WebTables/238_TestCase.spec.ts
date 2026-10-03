@@ -12,9 +12,10 @@ test('Verify the Webtable Example 1', async ({ page }) => {
     const firstPart = "//table[@id='customers']/tbody/tr[";
     const secondPart = "]/td[";
     const thirdPart = "]";
-
+   
+     //count rows and columns
     const rows = await page.locator("//table[@id='customers']/tbody/tr").count();
-    const cols = await page.locator("//table[@id='customers']/tbody/tr[2]/td").count();//3 td or colmuns
+    const cols = await page.locator("//table[@id='customers']/tbody/tr[2]/td").count();//3 td or colmuns in 2nd tr
 
    for (let i = 2; i <= rows; i++) {
       for (let j = 1; j <= cols; j++) {
@@ -32,9 +33,5 @@ test('Verify the Webtable Example 1', async ({ page }) => {
           }
       }
    }
-
-
-
-
   // await page.pause();
 });

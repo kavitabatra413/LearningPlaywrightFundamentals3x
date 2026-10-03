@@ -12,8 +12,15 @@ test('Verify the TestCase', async ({ page }) => {
    .click();
 
 
-
-
    // await page.pause();
    await page.waitForTimeout(5000);
 });
+
+/*
+Find Rohan.Mehta's table row → find an input inside that row → take the first input checkbox → click it.
+Part	What it is
+tr:has(td:text('Rohan.Mehta'))	  CSS-style locator using Playwright extended selectors
+.locator('input')	CSS element      locator + chaining
+.first()	Locator                   filtering
+.click()	                          Action
+*/

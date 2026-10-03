@@ -28,7 +28,7 @@ Newsletter
     for(const linkText of rightPanelLinksTexts){
         if( linkText === "Forgotten Password"){
              await page.getByText(linkText).first().click();//getByText converts text to locator
-        }
+        }//getByText find an HTML element containing that text.
     }
 
     const rightPanelLinks = await page.locator('a.list-group-item').all(); //rightPanelLinks is an array of Locator objects.
@@ -45,7 +45,7 @@ Newsletter
 #wish-list
 #order-history
 #downloads
-#recurring-payments
+#recurring-payments etc
     */
 
     await page.pause();
