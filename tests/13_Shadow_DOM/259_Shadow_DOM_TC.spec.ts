@@ -25,10 +25,23 @@ test.describe('Shadow handling', () => {
       await page.getByTestId('nested-host');
       await page.getByTestId('card-inside-email').fill('pramod@thetestingacdemy.com');
       await page.getByTestId('card-inside-password').fill('pramod@123');
-      await page.getByTestId('card-inside-submit').click();
+      await page.getByTestId('card-inside-submit').click()
 
       await page.pause();
 
    });
 
 });
+
+//npx playwright test tests/13_Shadow_DOM/259_Shadow_DOM_TC.spec.ts --reporter=line
+//<div class="card" data-testid="card-account-card"> 1 line above says shadow root open
+//<input type="email" name="email"
+//<input type="password" name="password"
+//<button type="button" data-testid="card-account-submit"
+//<div class="status" data-testid="card-account-status">
+
+//<tta-counter id="counter-1" data-testid="counter-cart"
+//<button type="button" role="button" aria-label="Increment" data-testid="counter-cart-inc">+</button>
+//<span class="value" data-testid="counter-value"
+      
+//<tta-nested id="nested-1" data-testid="nested-host">
