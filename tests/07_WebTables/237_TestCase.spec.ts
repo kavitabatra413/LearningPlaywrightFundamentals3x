@@ -5,7 +5,7 @@ test('Verify the TestCase', async ({ page }) => {
 
    //rows represents a locator that points to all <tr> elements inside the table body.
    const rows = page.locator('table[summary="Sample Table"] tbody tr');
-   const rowCount = await rows.count();//4
+   const rowCount = await rows.count();//4 ie number of DOM elements matching the locator
 
    for(let i=0;i<rowCount-1;i++){
       // const colsheader = await rows.nth(1).locator('th').allInnerTexts();
@@ -18,7 +18,7 @@ test('Verify the TestCase', async ({ page }) => {
 });
 
 
-/*npx playwright test tests/07_WebTables/237_TestCase.spec.ts
+/*run directly from arrow function.
 rows	Locator for all <tr> rows
 rows.nth(i)	Locator for one <tr>
 rows.nth(i).locator('td')	Locator for all <td> cells in that row

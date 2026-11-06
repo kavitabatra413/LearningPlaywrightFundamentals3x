@@ -23,8 +23,6 @@ test("BCP - in app.vwo.com two roles", async ({ browser }) => {
     await adminPage.close();
     await userPage.close();
     await guestPage.close();
-    
-
 });
 
 // run direct from arrow. 

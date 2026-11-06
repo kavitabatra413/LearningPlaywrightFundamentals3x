@@ -11,6 +11,9 @@ test("set referer for entire context", async ({ browser }) => {
     console.log("Page 1 — partner referer included");
     await page.goto("https://katalon-demo-cura.herokuapp.com/profile.php#login");
     console.log("Page 2 — partner referer included");
-
-
 });
+
+/*
+extraHTTPHeader Allows you to add custom HTTP headers to requests.
+"Referer" HTTP header that indicates which page or website the request came from.
+*/

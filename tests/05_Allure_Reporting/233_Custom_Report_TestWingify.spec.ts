@@ -29,7 +29,7 @@ test("go directly to dashboard3 — Test3", async ({ page }) => {
     await page.waitForTimeout(3000);
 });
 
-/*
+/*no need for --reporter . It will automatically pick custom reporter from playwright.config.ts
 C:\Users\Kavita Batra\Documents\LearningPlaywrightFundamentals3x\tta-report
 Generating TTA HTML Report...
 Report generated: tta-report/report_20260930_105842.html

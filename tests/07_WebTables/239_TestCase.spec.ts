@@ -17,7 +17,9 @@ test('Verify filter and has text', async ({ page }) => {
    await page.pause();
 });
 
-/*
+/* run directly from arrow function.
+Click forgottenPasswordLink
+ check footer has privacy policy link and Verify its href attribute value is #privacy-policy.
 Both are CSS locator + filter combinations in Playwright.
 footer
    └── div

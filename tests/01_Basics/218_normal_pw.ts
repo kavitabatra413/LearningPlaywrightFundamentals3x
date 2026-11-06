@@ -12,9 +12,6 @@ async function run() {
         await page.close();
         await context.close();
         await browser.close();
-
-    
-
 }
 
 run();

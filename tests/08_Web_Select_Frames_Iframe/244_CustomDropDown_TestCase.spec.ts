@@ -17,7 +17,7 @@ test('Verify Custom DropDowns', async ({ page }) => {
    await page.pause();
 });
 
-/*Programming language dropdown\
+/*Experience level dropdown\
 instead of select tag its button
 getByTestId() specifically looks for the data-testid attribute:
 */

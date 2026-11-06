@@ -8,7 +8,7 @@ test('tc#1 - Verify that the vwo page is laoded', async({page})=>{
         referer:"https://sdet.live"
     });
 
-     // Defalt Locators
+     // Default Locators
     //  id, name, className, Tag., Custom Locator (Via CSS selector)
 
     // Css Seclector ->  Browser - Css Engine, Help you to find the element
@@ -44,7 +44,6 @@ test('tc#1 - Verify that the vwo page is laoded', async({page})=>{
     await loginButton.click();
 
     let error_message = page.locator('#js-notification-box-msg');
-
     await expect(error_message).toContainText("Your email, password, IP address or location did not match");
 
     await page.pause();

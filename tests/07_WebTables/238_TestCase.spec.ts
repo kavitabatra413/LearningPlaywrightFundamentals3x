@@ -1,3 +1,4 @@
+//verify Helen Bennett is In - UK
 import { test, expect, Locator } from '@playwright/test';
 
 test('Verify the Webtable Example 1', async ({ page }) => {
@@ -33,5 +34,30 @@ test('Verify the Webtable Example 1', async ({ page }) => {
           }
       }
    }
-  // await page.pause();
+   await page.pause();
 });
+
+/*
+run directly from arrow function.
+
+Google
+Maria Anders
+Germany
+Meta
+Francisco Chang
+Mexico
+Microsoft
+Roland Mendel
+Austria
+Island Trading
+Helen Bennett
+------
+Helen Bennett is In - UK
+UK
+Adobe
+Yoshi Tannamuri
+Canada
+Amazon
+Giovanni Rovelli
+Italy
+*/

@@ -25,7 +25,4 @@ test('mobile layout', async ({ page, browserName }) => {
   test.fixme(browserName === 'webkit', 'Safari renders menu wrong');
   
   await page.goto("https://sdet.live");
-    
-
-
 });

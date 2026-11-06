@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-/**
+/*
  * Same three dashboard checks as 233, but this file also captures
  * screenshot + video + trace for every test so the custom reporter
  * has media to render.
@@ -8,6 +8,11 @@ import { test, expect } from "@playwright/test";
  * Run it with:
  *   npx playwright test tests/05_Allure_Reporting/234_Media_Custom_Report.spec.ts \
  *       --reporter=./utils/CustomReporter.ts
+ * Playwright applies these settings to all tests in that spec file
+ * storageState	Loads previously saved login state (cookies and local storage).
+   screenshot: 'on' Captures a screenshot for every test, pass or fail.
+   video: 'on'	Records video for every test.
+   trace: 'on'	Captures trace information for every test.
  */
 test.use({
     storageState: './user-session.json',

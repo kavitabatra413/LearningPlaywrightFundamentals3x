@@ -2,7 +2,7 @@ import { test, expect, Locator, FrameLocator } from '@playwright/test';
 
 test('Verify Frame handling practice', async ({ page }) => {
   await page.goto('https://app.thetestingacademy.com/playwright/frames/');
-  let vechileFrame: FrameLocator = await page.frameLocator("#frame-one");//<iframe id="frame-one" 
+  let vechileFrame: FrameLocator = await page.frameLocator("#frame-one");//<iframe id="frame-one" square box
 
   await vechileFrame.locator('#RESULT_TextField-1').fill('Hyundai i10');//<input id="RESULT_TextField-1", CSS locator
   await vechileFrame.locator('#RESULT_TextField-2').fill('Pramod Dutta');//owner name text field
@@ -22,3 +22,14 @@ test('Verify Frame handling practice', async ({ page }) => {
 });
 
 //a frame locator is used to interact with elements that are inside an <iframe>.
+
+/*
+{
+  "vehicleName": "Hyundai i10",
+  "ownerName": "Pramod Dutta",
+  "regNumber": "2012",
+  "vehicleType": "Hatchback",
+  "year": "2015",
+  "notes": "Amazing car with amazing family car in a budget"
+}
+*/

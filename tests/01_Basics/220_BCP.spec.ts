@@ -21,10 +21,7 @@ async function run() {
     await page.close();
     await context1.close();
     await browser.close();
-
-
 }
-
 run();
 
 /*how tot run

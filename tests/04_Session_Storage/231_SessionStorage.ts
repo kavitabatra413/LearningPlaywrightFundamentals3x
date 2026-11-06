@@ -35,4 +35,17 @@ A browser context can contain things like:
 Cookies 🍪
 Local Storage
 Session-related information
+Session Storage is a browser feature used to temporarily store data on the
+client side (in the browser) for a particular tab or browsing session.
+In simple terms, it remembers information while you are using a website,
+ even when you navigate from one page to another.*/
+
+/* 1. CSS ID locator
+await page.fill("#login-username", "admin@vwo.com");
+
+ 2. CSS class locator
+await page.fill(".username", "admin@vwo.com");
+
+ 3. CSS attribute locator
+await page.fill('input[name="username"]', "admin@vwo.com");
 */

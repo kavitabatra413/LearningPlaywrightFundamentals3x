@@ -29,7 +29,8 @@ test("go directly to dashboard3 — Test3", async ({ page }) => {
     await page.waitForTimeout(3000);
 });
 
-/*C:\Users\Kavita Batra\Documents\LearningPlaywrightFundamentals3x\allure-results
+/* npx playwright test 232_TestWingify.spec.ts --reporter=allure-playwright
+C:\Users\Kavita Batra\Documents\LearningPlaywrightFundamentals3x\allure-results
 allure-results/
  ├── xxx-result.json
  ├── xxx-container.json
@@ -42,7 +43,6 @@ http://127.0.0.1:XXXXX
  /*DefaultHTML report
  npx playwright show-report
  C:\Users\Kavita Batra\Documents\LearningPlaywrightFundamentals3x\playwright-report
-
  D:\Playwright\MyProject\
 │
 ├── tests\
